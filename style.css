@@ -1,3 +1,26 @@
+@font-face {
+  font-family: ICHIGAYA; 
+  src: url(fonts/Ichigayamincho-9MAv0.ttf); 
+}
+
+h1 {
+    color: darkolivegreen;
+    text-shadow: 1px 1px 2px black;
+}
+
+p {
+    color: rgb(135, 158, 123);
+    text-shadow: 1px 1px 2px black;
+}
+
+#instructions, #counter {
+  color: goldenrod;
+}
+
+#star {
+  visibility: hidden;
+}
+
 html {
   background-image: url("images/moon.JPG");
   background-attachment: fixed;
@@ -5,16 +28,27 @@ html {
   background-size: cover;
 }
 
-img {
-  width: 100%;
-  min-width: 20px;
-  height: auto;
-  max-width: 15vw;
+body {
+    font-family: ICHIGAYA;
+}
+
+.bounce {
   position: absolute;
   will-change: left, top;
   cursor: pointer;
 }
 
+img {
+  width: 100%;
+  min-width: 20px;
+  height: auto;
+  max-width: 15vw;
+  border-radius: 8px;
+  box-shadow: 5px 5px 2px black;
+}
+
 img:hover {
     max-width: 20vw;
+    border: 3px solid white;
+    rotate: 20deg;
 }
