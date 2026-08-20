@@ -1,0 +1,20 @@
+html {
+  background-image: url("images/moon.JPG");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+img {
+  width: 100%;
+  min-width: 20px;
+  height: auto;
+  max-width: 15vw;
+  position: absolute;
+  will-change: left, top;
+  cursor: pointer;
+}
+
+img:hover {
+    max-width: 20vw;
+}
